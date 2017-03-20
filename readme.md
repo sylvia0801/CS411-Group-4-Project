@@ -1,6 +1,5 @@
 ##Group Members
 ```
-
 Group 4:
 Xiaotong Niu, Yichen li, Darshan Padmanabhan, Zhuoshu Yang
 ```
