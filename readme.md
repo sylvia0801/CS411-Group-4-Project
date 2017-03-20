@@ -1,38 +1,12 @@
-#Installation
-
-##Getting the files
-```
-git clone https://github.com/benlawson/Photoshare-Skeleton.git
-cd Photoshare-Skeleton/
+##Group Members
 ```
 
-##Database setup: (for ubuntu)
-First install MySQL with the following:
-```
-sudo apt-get update
-sudo apt-get dist-upgrade
-sudo apt-get install mysql-server mysql-client
-sudo apt-get install libmysqlclient-dev
-```
-Then start mysql:
-```
-mysql -u root -p
-```
-password is None so just press enter.
-```
-source ./schema.sql 
-```
-Now quit MySQL (enter CTRL-D or \q)
-
-##Application Setup:
-```
-virtualenv photoenv
-source photoenv/bin/activate #use photoenv/Scripts/activate on windows
-pip install -r requirements.txt
-python app.py
+Group 4:
+Xiaotong Niu, Yichen li, Darshan Padmanabhan, Zhuoshu Yang
 ```
 
-You can now point your favorite web brower to [localhost:5000](localhost:5000) to see your web app. 
-# CS411-Group-4-Project
-# CS411-Group-4-Project
-# CS411-Group-4-Project
+##Project Description
+```
+Investment Portfolio Performance Analysis
+We are going to build a website to analyze and compare performance of different mutual funds, pension funds, and private equity firms like Berkshire Hathaway. Our landing page will consist of the daily percentage increase or decrease of different finance and investment firms. The user can click on various companies and check each respective companies’ portfolios.  The user can then learn about the component stocks and weights and the performance of all the stocks and analysis will be displayed and sourced from Yahoo finance or the companies’ websites. The site visitor can also complete an investment tolerance questionnaire from vanguard.com and the website can make appropriate recommendations based on the user’s preferences. 
+```
