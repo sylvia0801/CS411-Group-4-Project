@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    h3= "Find Stock Ticker"
+    form#form_add_ticker(name="ticker", method="post",
+    action="/")
+        span Ticker 
+        span &nbsp;
+        input#input_name(type="text", placeholder="ticker", name="tickerInput")
+        button#submit_ticker(type="submit") submit
+        
+        -for(var element in data)
+            -if (element == 'tickerInfo')
+                -var tickerInfo = data[element]
+                -for(var tickerElement in tickerInfo)
+                    p #{tickerElement}: #{data[element][tickerElement]}        
+    #quiz
+        -for(var element in data)
+            -if (element == 'currentQuestion')
+                p #{data[element]['question']}
+                
+                -for (var answer in data[element]['answers'][0])
+                    
+                    -if (data[element]['answers'].length > 0)
+                        button#answerButton(onClick="/0" name="selection") #{data[element]['answers'][0]}
+                    -if (data[element]['answers'].length > 1)
+                        button#answerButton(onClick="/1" name="selection") #{answer[1]}
+                    -if (data[element]['answers'].length > 2)
+                        button#answerButton(onClick="/2" name="selection") #{answer[2]}
+                    -if (data[element]['answers'].length > 3)
+                        button#answerButton(onClick="/3" name="selection") #{answer[3]}
+                    -if (data[element]['answers'].length > 100)
+                        button#answerButton(onClick="/4" name="selection") #{answer[4]}
