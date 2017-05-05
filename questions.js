@@ -1,14 +1,14 @@
-var answers = [{
+
+var questions = [
+    {
+        "question": "What is your current age?",
+        "answers": [{
             "Over 60" : "0",
             "50-59" : "1",
             "40-49" : "2",
             "30-39" : "3",
             "Under 29" : "4"
         }]
-var questions = [
-    {
-        "question": "What is your current age?",
-        "answers": answers
     }
     ,{
         "question": "How would you rate your current level of investment knowledge/understanding?",
@@ -19,7 +19,7 @@ var questions = [
             "Good":"3",
             "Excellent":"4"
         }]
-    }/*
+    }
     ,{
         "question": "How old are you?",
         "answers":[
@@ -119,7 +119,7 @@ var questions = [
                 "Strongly Disagree":"4"
             }
         ]
-    }*/
+    }
 ]
 
 module.exports.questions = questions
